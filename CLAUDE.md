@@ -16,7 +16,7 @@ Kailash Python SDK is a Terrene Foundation project (Singapore CLG). No commercia
 
 ### 2. Specs as Index, Craft as Substance
 
-Standards name the _space_ of skills. The **journal corpus** supplies the _substance_: ~253 CO/COC practitioner craft entries across `loom/` (meta journal + kailash-py/rs + kaizen-cli workspaces + kz-engage) and `terrene/` (journal + claude-squad), plus ~66 academic/thesis entries in `terrene/foundation/workspaces/care-thesis` and `publications/`. Both the index and the substance are required. See `rules/specs-first.md`.
+Standards name the _space_ of skills. The **journal corpus** supplies the _substance_: **232 CO/COC practitioner craft entries** across `loom/` (50 top-level meta journal + 85 kailash-py workspaces + 13 kailash-py ADRs + 41 kailash-rs + 26 kaizen-cli-rs + 3 kaizen-cli-py + 12 kz-engage) and `terrene/` (2 journal), verified by read-and-classify pass on 2026-04-07. Plus ~66 academic/thesis entries in `terrene/foundation/workspaces/care-thesis/` and `publications/`, and ~29 Foundation contrib/policy entries. Both the index and the substance are required. See `rules/specs-first.md`.
 
 ### 3. CO Applications — All In Scope, Usage-Weighted
 
@@ -98,13 +98,13 @@ FORGE artifacts sit alongside CARE / EATP / CO / PACT in the Foundation's public
 
 The production FORGE library lives at the program root. Analysis artifacts live under `.claude/workspaces/forge-curriculum/`.
 
-| Path                         | Contents                                                                                                        |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `catalog/`                   | **57 skill atoms** (18 brokerage + 15 artifact + 24 practitioner). The canonical, contributor-neutral library. Each atom has spec mooring, journal evidence, drill, and failure mode. Downstream courses and atelier/co-codegen pull from here. |
-| `catalog/README.md`          | Production index with 5 views (layer, craft area, spec lineage, modality, application)                         |
-| `drills/`                    | Recurring micro-exercises extracted from atom drill sections (pending M2)                                       |
-| `cases/`                     | DISCOVERY/RISK journal-derived teaching cases with spec-mooring overlay (pending M3)                            |
-| `.claude/workspaces/forge-curriculum/` | Analysis workspace — decision log D1-D26, spec index (417 concepts), reverse index (232 entries), 7 pre-rigor-bar specialist reports, todo milestones |
+| Path                                   | Contents                                                                                                                                                                                                                                                                        |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `catalog/`                             | **57 skill atoms** (18 brokerage + 15 artifact + 24 practitioner). The canonical, contributor-neutral library. Each atom has spec mooring, journal evidence, drill, and failure mode. Downstream courses and atelier/co-codegen pull from here.                                 |
+| `catalog/README.md`                    | Production index with 5 views (layer, craft area, spec lineage, modality, application)                                                                                                                                                                                          |
+| `drills/`                              | **57 drill specs + 10 fully expanded exemplars**. `specs/` holds one structured drill spec per atom. `exemplars/` holds 10 full-form drills with setup, task, model answer, scoring, and extensions. `README.md` indexes by craft area, modality, difficulty, and spec lineage. |
+| `cases/`                               | **10 exemplar teaching cases** lifted from DISCOVERY/RISK journal entries with spec-mooring overlay. Each case: situation → trigger → move → outcome → spec connection → discussion questions. `case-candidates.md` lists ranked candidates for future expansion.               |
+| `.claude/workspaces/forge-curriculum/` | Analysis workspace — decision log D1-D26+, spec index (417 concepts), reverse index (232 entries), 7 pre-rigor-bar specialist reports, M1-M5 todo milestones, red team round 2 findings                                                                                         |
 
 ## Rules Index
 
@@ -126,4 +126,4 @@ The production FORGE library lives at the program root. Analysis artifacts live 
 
 ## Current Analysis State
 
-Active workspace: `forge-curriculum` (`.claude/workspaces/forge-curriculum/`). **Read `01-analysis/02-synthesis/02-decision-log.md` first** when continuing this work — it carries the accumulated framing decisions (D1–D19+). The 7 specialist reports in `01-analysis/01-research/` are evidence-base drafts written before the rigor bar was set and **must be re-verified** before being used as curriculum source.
+Active workspace: `forge-curriculum` (`.claude/workspaces/forge-curriculum/`). **Read `01-analysis/02-synthesis/02-decision-log.md` first** when continuing this work — it carries the accumulated framing decisions (D1–D26+). The 7 specialist reports in `01-analysis/01-research/` are evidence-base drafts written before the rigor bar was set and **must be re-verified** before being used as curriculum source.

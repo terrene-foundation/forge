@@ -34,6 +34,7 @@ The workspace produces **atom-based library content**, organised by:
 5. **Practice modality** — drill / case / observation / build / brokerage-rep / governance-call
 
 Current output (analysis phase complete):
+
 - **57 skill atoms** in 3 craft layers (18 brokerage + 15 artifact + 24 practitioner)
 - **232 journal entries** indexed as evidence corpus
 - **417 spec concepts** enumerated across the four standards
@@ -41,24 +42,38 @@ Current output (analysis phase complete):
 
 ## Dual-destination routing
 
-Every atom is tagged with a destination:
-- `forge` — uniquely FORGE practitioner pedagogy (Layer 1 — 24 atoms)
-- `co-codegen` — agnostic methodology for any CO ecosystem consumer (22 atoms)
-- `both` — canonical in co-codegen, referenced from FORGE (11 atoms)
+Every atom is tagged with a destination. Post-M1 red team final distribution:
+
+- `forge` — uniquely FORGE practitioner pedagogy (21 atoms)
+- `co-codegen` — agnostic methodology for any CO ecosystem consumer (23 atoms)
+- `both` — canonical in co-codegen, referenced from FORGE (13 atoms)
+
+Craft layers and destinations do not map 1:1. The 24 Layer 1 (practitioner) atoms split across destinations: 21 are `forge`, three (SC-P-013, SC-P-015, SC-P-019) are `both`. The 13 `both` atoms each have a co-codegen variant in `catalog/co-codegen-variants/` with drill → "How to apply" transformation.
 
 ## Production deliverables
 
-At the end of implementation (M1-M5 in `todos/active/`):
+M1-M5 (in `todos/active/`) are all complete as of 2026-04-08:
 
 ```
 lyceum/programs/forge/
 ├── CLAUDE.md                (updated with catalog reference)
-├── catalog/                 (57 verified atoms + indexes)
-├── drills/                  (specs + 10 exemplar full drills)
-└── cases/                   (DISCOVERY/RISK journals with spec-mooring overlay)
+├── catalog/                 (see catalog/README.md for the full substructure)
+│   ├── brokerage/           18 atoms (operator + governance craft)
+│   ├── artifact/            15 atoms (CC artifact authoring craft)
+│   ├── practitioner/        24 atoms (session-level moves)
+│   ├── co-codegen-variants/ 13 alternate framings for `both` atoms
+│   ├── README.md            5 index views + craft-area balance audit
+│   ├── spec-coverage.md     57 atoms → 417 spec concepts (30% coverage)
+│   ├── teaching-sequences.md  5 workflow clusters
+│   ├── routing-manifest.yaml  dual-destination manifest (authoritative)
+│   ├── co-codegen-staging.md  36 atoms queued for next sync
+│   ├── upstream-flags.md      stale upstream debt (don't edit here)
+│   └── future-passes.md       COR/COE/compliance/finance/governance/learners queue
+├── drills/                  57 drill specs + 10 full exemplars + 4-view README
+└── cases/                   10 exemplar cases + index + case-candidates
 ```
 
-Methodology extractions stage for routing to `atelier/co-codegen/` on the next sync pass.
+Methodology extractions in `catalog/co-codegen-staging.md` + `catalog/co-codegen-variants/` are ready for routing to `atelier/co-codegen/` on the next sync pass.
 
 ## Reference
 

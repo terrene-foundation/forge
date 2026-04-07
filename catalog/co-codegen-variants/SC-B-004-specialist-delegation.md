@@ -23,7 +23,7 @@ status: verified
 
 ## The move
 
-When the next planned action touches a Kailash framework (Core SDK, DataFlow, Nexus, Kaizen, MCP platform, PACT primitives, ML, Align), route the work through the relevant framework specialist _before_ writing the todo or the implementation. The specialist's job is to read the actual SDK source against the planned API surface and produce a corrections list. The corrections feed the todo before any code is written; they do not arrive as red team findings after implementation.
+When the next planned action touches a Kailash framework (Core SDK, DataFlow, Nexus, Kaizen, MCP platform, PACT (primitives), ML, Align), route the work through the relevant framework specialist _before_ writing the todo or the implementation. The specialist's job is to read the actual SDK source against the planned API surface and produce a corrections list. The corrections feed the todo before any code is written; they do not arrive as red team findings after implementation.
 
 ## When it fires
 
