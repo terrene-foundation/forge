@@ -1,88 +1,129 @@
 # FORGE — Foundation for Orchestration, Reasoning, and Generative Engineering
 
-Official Terrene Open Academy programme teaching CO (Cognitive Orchestration) and COC (Claude Operations Codex) skills. Two tracks — AI Engineer and AI Business Consultant — share a common foundation before branching into specializations.
+Official Terrene Foundation programme teaching the four foundation standards (**CARE / EATP / CO / PACT**) and their applications as practitioner skillsets distilled from the journal corpus. FORGE is the canonical, contributor-neutral library for the CO ecosystem. Role-tailored client courses live downstream in `lyceum/courses/`.
+
+**Authority:** The programme owner declares what counts as a standard and what is in scope. The filesystem reflects the state of graduation, not the source of truth about peer status. FORGE artifacts must treat programme-owner declarations as authoritative over filesystem state when they conflict.
 
 ## Absolute Directives
 
 ### 0. Foundation Independence
-Kailash Python SDK is a Terrene Foundation project (Singapore CLG). No commercial references. See `rules/independence.md`.
 
-### 1. Specs as First Principles
-CARE, EATP, CO, COC, and PACT are first principles that generate the curriculum — not post-hoc lenses applied to existing material. Every module maps to specification concepts.
+Kailash Python SDK is a Terrene Foundation project (Singapore CLG). No commercial references. See `rules/independence.md`. Aegis is **not** in FORGE scope (commercial implementation, reserved for downstream client courses). The open-sourced reference implementation of the PACT standard is the **PACT platform**. Aether is the DataFlow data fabric interface and is out of FORGE scope until the courses phase.
 
-### 2. Framework-First
-All technical content uses Kailash frameworks. Never raw sklearn/pandas/PyTorch without the Kailash wrapper.
+### 1. Four Standards as First Principles
 
-### 3. Dual-Track Architecture
-Foundation modules (F1-F4) are shared. Specialization modules diverge: E-track (AI Engineer) and C-track (AI Business Consultant). Content must be clearly tagged by track.
+**CARE** (philosophy), **EATP** (protocol), **CO** (methodology), **PACT** (governance) are a **quartet**, not a trinity. All four are peers. Every skill atom cites spec lineage from one or more of them with equal authority. See `rules/forge-scope.md` § 1.
 
-## Course Structure
+### 2. Specs as Index, Craft as Substance
 
-### Foundation Track (Shared — F1-F4)
+Standards name the _space_ of skills. The **journal corpus** supplies the _substance_: ~253 CO/COC practitioner craft entries across `loom/` (meta journal + kailash-py/rs + kaizen-cli workspaces + kz-engage) and `terrene/` (journal + claude-squad), plus ~66 academic/thesis entries in `terrene/foundation/workspaces/care-thesis` and `publications/`. Both the index and the substance are required. See `rules/specs-first.md`.
 
-| Module | Title | Key Concepts |
-|--------|-------|-------------|
-| F1 | CO Fundamentals | CARE (Dual Plane, Mirror Thesis, Constraint Envelopes), EATP (5 trust postures, lineage), CO (5 layers, 8 principles, 3 failure modes) |
-| F2 | COC Architecture | Five-layer architecture (Intent, Context, Guardrails, Instructions, Learning), agents, skills, rules, hooks, commands, variant system |
-| F3 | Kailash SDK Essentials | Core SDK workflows, DataFlow CRUD, Nexus deployment, Kaizen agents — hands-on with the platform |
-| F4 | AI Systems Design | Orchestration patterns, MCP integration, multi-agent coordination, institutional knowledge capture |
+### 3. CO Applications — All In Scope, Usage-Weighted
 
-### AI Engineer Track (E1-E4)
+CO is the base methodology with multiple domain applications. All are in scope. Build order follows usage weight:
+**COC** (codegen, heaviest) → **COR** (research) → **COE** (education) → compliance / finance / governance / learners. No "v1 = COC only" gate. See `rules/forge-scope.md` § 2.
 
-| Module | Title | Key Concepts |
-|--------|-------|-------------|
-| E1 | COC Development | Building agents (specialist, quality, management), writing skills (SKILL.md index, sub-skills), rules (scoped, Why: rationale), hooks (session-start, pre-commit), commands |
-| E2 | ML Pipeline Engineering | kailash-ml engines (13 engines), TrainingPipeline, AutoML, ModelRegistry, ONNX export, drift monitoring — drawn from ASCENT M3-M4 patterns |
-| E3 | Agent Engineering | Kaizen Delegate vs BaseAgent, Signature-based programming, multi-agent orchestration, tool calling, structured outputs, MCP servers |
-| E4 | Production Systems | Nexus multi-channel deployment, PACT governance (D/T/R, operating envelopes), InferenceServer, monitoring, CI/CD for COC artifacts |
+### 4. Framework-First
 
-### AI Business Consultant Track (C1-C4)
+All technical content uses Kailash frameworks. Never raw sklearn/pandas/PyTorch without the Kailash wrapper. See `rules/framework-first.md`.
 
-| Module | Title | Key Concepts |
-|--------|-------|-------------|
-| C1 | DX Strategy Frameworks | 5 Domains of DX Strategy (Customer, Value, Competition, Data, Innovation), 3x3 Matrix (Digitization/Digitalization/Transformation x Products/Platforms/Ecosystems x Automation/Augmentation/Amplification), Competitive Dimensions (Scale, Scope, Speed) |
-| C2 | Organizational AI Assessment | EATP trust posture mapping, transformation readiness, Constraint Theater Thesis, Mirror Thesis application to client organizations |
-| C3 | CO for Client Engagement | Using CO methodology to structure consulting deliverables, case analysis through Dual Plane, whitepaper and policy brief production |
-| C4 | Governance & Compliance | PACT D/T/R accountability grammar, operating envelopes, knowledge clearance, regulatory frameworks (NIST, ISO, EU AI Act, Singapore IMDA), AI governance architecture |
+### 5. Contributor-Neutral Library, Not Tracks
 
-## Source Material
+FORGE is organised by **responsibilities + accountabilities + skillsets + spec lineage + application + practice modality** — not by role names. Role-tailored sequences (AI Engineer, AI Business Consultant, future others) live downstream in `lyceum/courses/`. Different clients mix and match. See `rules/dual-track.md`.
 
-| Source | Provides | Modules |
-|--------|----------|---------|
-| co-ai (COE) | Assessment design methodology, AI-resilient pedagogy | F1, F2, C3 |
-| co-ax (CO-DX) | DX frameworks, shadow cases, Constraint Theater Thesis | C1, C2, C3, C4 |
-| ascent | ML engineering exercises, Kailash SDK patterns | F3, E1-E4 |
-| atelier | CO/COC artifact authority, spec implementations | F1, F2, F4, E1 |
-| loom | COC source, variant system, sync mechanics | E1, F2 |
+### 6. Dual-Destination Routing
 
-## Kailash Platform
+Every output is tagged `forge` / `co-codegen` / `both`. Practitioner pedagogy → `forge`. Artifact-authoring craft + brokerage/governance craft → `co-codegen` or `both`. Distill once, route both ways. See `rules/forge-scope.md` § 4.
 
-| Framework | Purpose | Install |
-|-----------|---------|---------|
-| Core SDK | Workflow orchestration, 140+ nodes | `pip install kailash` |
-| DataFlow | Zero-config database operations | `pip install kailash-dataflow` |
-| Nexus | Multi-channel deployment (API+CLI+MCP) | `pip install kailash-nexus` |
-| Kaizen | AI agent framework | `pip install kailash-kaizen` |
-| PACT | Organizational governance (D/T/R) | `pip install kailash-pact` |
-| ML | ML lifecycle (13 engines, polars) | `pip install kailash-ml` |
-| Align | LLM fine-tuning & serving | `pip install kailash-align` |
+### 7. Rigor Bar
+
+FORGE artifacts sit alongside CARE / EATP / CO / PACT in the Foundation's public presentation. Enumerate spec concepts concretely (not summarise). Cite every craft claim with a verifiable path. Read entries before citing them — no synthesising from memory. Name gaps as gaps. See `rules/forge-scope.md` § 5.
+
+## Spec Sources (Authoritative Paths)
+
+| Standard              | Canonical location                                                                                                                           |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| CARE                  | `terrene/foundation/docs/02-standards/care/` (7 subsections, 37 files)                                                                       |
+| EATP                  | `terrene/foundation/docs/02-standards/eatp/` (7 files, 01-first-principles → 07-conformance)                                                 |
+| CO                    | `terrene/foundation/docs/02-standards/co/` (4 core + `applications/` + `workflows/`)                                                         |
+| PACT                  | `terrene/foundation/docs/02-standards/publications/PACT-Core-Thesis.md` + `terrene/foundation/workspaces/pact/` (treated as fourth standard) |
+| COC (application)     | `terrene/foundation/docs/02-standards/publications/COC-Core-Thesis.md` (documented as thesis; the first and most developed CO application)   |
+| COR (application)     | `terrene/foundation/docs/02-standards/co/applications/co-for-research.md`                                                                    |
+| COE (application)     | `terrene/foundation/docs/02-standards/co/applications/co-for-education.md`                                                                   |
+| Other CO applications | `terrene/foundation/docs/02-standards/co/applications/co-for-{compliance,finance,governance,learners}.md`                                    |
+
+## Journal Corpus (Authoritative Locations)
+
+| Source                                                         | Count | Nature                                                        |
+| -------------------------------------------------------------- | ----- | ------------------------------------------------------------- |
+| `loom/journal/`                                                | 50    | Top-level CO/COC meta journal                                 |
+| `loom/kailash-py/workspaces/`                                  | 85    | Python SDK craft journals (+13 ADRs under `docs/adr/`)        |
+| `loom/kailash-rs/workspaces/`                                  | 41    | Rust SDK craft journals                                       |
+| `loom/kaizen-cli-rs/workspaces/`                               | 26    | Kaizen CLI (Rust) craft                                       |
+| `loom/kaizen-cli-py/workspaces/`                               | 3     | Kaizen CLI (Python) craft                                     |
+| `loom/kz-engage/workspaces/`                                   | 12    | kz-engage craft                                               |
+| `terrene/journal/`                                             | 2     | Top-level terrene journal                                     |
+| `terrene/claude-squad/`                                        | 3     | Squad coordination journal                                    |
+| `terrene/foundation/workspaces/care-thesis/` + `publications/` | 66    | Academic/thesis entries (CARE theory, not practitioner craft) |
+| `terrene/contrib/` + `terrene/policy/`                         | 29    | Foundation contrib + policy                                   |
+
+**Not sources** (either empty or out of scope): `atelier/*` (zero journal entries), `dev/*` (only aegis has 5, and aegis is out of scope per §0), and anything under `hmi/`, `tpc/`, `projects/`, `rr/`, `research/`.
+
+## Kailash Platform (In-Scope Frameworks)
+
+| Framework       | Purpose                                             | Install                        |
+| --------------- | --------------------------------------------------- | ------------------------------ |
+| Core SDK        | Workflow orchestration, 140+ nodes                  | `pip install kailash`          |
+| DataFlow        | Zero-config database operations                     | `pip install kailash-dataflow` |
+| Nexus           | Multi-channel deployment (API+CLI+MCP)              | `pip install kailash-nexus`    |
+| Kaizen          | AI agent framework                                  | `pip install kailash-kaizen`   |
+| PACT primitives | D/T/R types, envelope decorators, clearance APIs    | `pip install kailash-pact`     |
+| ML              | ML lifecycle (13 engines, polars)                   | `pip install kailash-ml`       |
+| Align           | LLM fine-tuning & serving                           | `pip install kailash-align`    |
+| MCP platform    | FastMCP server, contributor plugins, security tiers | (in Core SDK + extensions)     |
 
 ## Workspace Commands
 
-| Command | Purpose |
-|---------|---------|
-| `/analyze` | Load analysis phase for current workspace |
-| `/todos` | Load todos phase; stops for human approval |
-| `/implement` | Load implementation phase |
-| `/redteam` | Load validation phase |
-| `/codify` | Update agents & skills with new knowledge |
-| `/ws` | Read-only workspace status dashboard |
-| `/wrapup` | Write session notes before ending |
+| Command      | Purpose                                    |
+| ------------ | ------------------------------------------ |
+| `/analyze`   | Load analysis phase for current workspace  |
+| `/todos`     | Load todos phase; stops for human approval |
+| `/implement` | Load implementation phase                  |
+| `/redteam`   | Load validation phase                      |
+| `/codify`    | Update agents & skills with new knowledge  |
+| `/ws`        | Read-only workspace status dashboard       |
+| `/wrapup`    | Write session notes before ending          |
+
+## FORGE Library Structure
+
+The production FORGE library lives at the program root. Analysis artifacts live under `.claude/workspaces/forge-curriculum/`.
+
+| Path                         | Contents                                                                                                        |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `catalog/`                   | **57 skill atoms** (18 brokerage + 15 artifact + 24 practitioner). The canonical, contributor-neutral library. Each atom has spec mooring, journal evidence, drill, and failure mode. Downstream courses and atelier/co-codegen pull from here. |
+| `catalog/README.md`          | Production index with 5 views (layer, craft area, spec lineage, modality, application)                         |
+| `drills/`                    | Recurring micro-exercises extracted from atom drill sections (pending M2)                                       |
+| `cases/`                     | DISCOVERY/RISK journal-derived teaching cases with spec-mooring overlay (pending M3)                            |
+| `.claude/workspaces/forge-curriculum/` | Analysis workspace — decision log D1-D26, spec index (417 concepts), reverse index (232 entries), 7 pre-rigor-bar specialist reports, todo milestones |
 
 ## Rules Index
 
-| Concern | Rule File |
-|---------|-----------|
-| Foundation independence | `rules/independence.md` |
-| Specs-first curriculum | `rules/specs-first.md` |
-| Dual-track consistency | `rules/dual-track.md` |
+| Concern                                                                    | Rule File                                                                                 |
+| -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Foundation independence (no commercial references)                         | `rules/independence.md`                                                                   |
+| FORGE scope, four standards, applications, PACT layers, routing, rigor bar | `rules/forge-scope.md`                                                                    |
+| Specs as index, craft as substance                                         | `rules/specs-first.md`                                                                    |
+| Library-not-tracks organisation                                            | `rules/dual-track.md`                                                                     |
+| Framework-first technical content                                          | `rules/framework-first.md`                                                                |
+| CC artifact quality (descriptions, sizes, progressive disclosure)          | `rules/cc-artifacts.md`                                                                   |
+| Canonical terminology                                                      | `rules/terrene-naming.md` (note: still says "trinity" — PACT graduation pending upstream) |
+| Communication style (plain language by default)                            | `rules/communication.md`                                                                  |
+| Autonomous execution model (no human-team framing)                         | `rules/autonomous-execution.md`                                                           |
+| Agent orchestration & specialist delegation                                | `rules/agents.md`                                                                         |
+| Git workflow                                                               | `rules/git.md`                                                                            |
+| Security                                                                   | `rules/security.md`                                                                       |
+| Zero-tolerance (no stubs, no fallbacks, no workarounds)                    | `rules/zero-tolerance.md`                                                                 |
+
+## Current Analysis State
+
+Active workspace: `forge-curriculum` (`.claude/workspaces/forge-curriculum/`). **Read `01-analysis/02-synthesis/02-decision-log.md` first** when continuing this work — it carries the accumulated framing decisions (D1–D19+). The 7 specialist reports in `01-analysis/01-research/` are evidence-base drafts written before the rigor bar was set and **must be re-verified** before being used as curriculum source.
