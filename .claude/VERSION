@@ -1,0 +1,12 @@
+{
+  "version": "2.9.0",
+  "type": "coc-downstream",
+  "description": "FORGE — Foundation for Orchestration, Reasoning, and Generative Engineering",
+  "synced_at": "2026-04-07T02:25:27Z",
+  "upstream": {
+    "name": "kailash-coc-claude-py",
+    "type": "coc-use-template",
+    "version": "2.9.0",
+    "synced_at": "2026-04-07T02:25:27Z"
+  }
+}
