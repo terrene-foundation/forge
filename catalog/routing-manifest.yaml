@@ -1,0 +1,299 @@
+# FORGE Skill Catalog — Dual-Destination Routing Manifest
+# Generated: 2026-04-07
+# Source: catalog/ (57 atoms)
+# Actions: co-codegen (canonical in co-codegen), both (canonical in co-codegen + FORGE reference), forge (FORGE only)
+
+atoms:
+  # --- Brokerage (18 atoms) ---
+  - id: SC-B-001
+    name: Read-then-merge sync semantics
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-002
+    name: Authority-chain escalation when local fix gets reverted
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-003
+    name: Variant classification — single-sentence test rule
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-004
+    name: Specialist delegation as required first move (framework work)
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-B-005
+    name: Spec-to-code conformance audit
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-006
+    name: Multi-round red team to numeric convergence
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-007
+    name: Worktree-per-agent for safe parallel execution
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-008
+    name: Convergence-as-validation across independent reds
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-009
+    name: Cross-SDK upstream brokerage
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-010
+    name: Cross-repo divergence audit with numbered drift-gap list
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-011
+    name: Version tracking cascade across the repo chain
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-012
+    name: Automate manifest-to-filesystem parity check and halt on staleness
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-013
+    name: Map cross-workspace dependency surface before parallelizing
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-014
+    name: Journal decision reversals with explicit supersession references
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-015
+    name: Reinterpret MUST rules from "human performs" to "human approves" and amend the rule text
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-016
+    name: Audit cross-language parity bidirectionally — the other SDK may be the reference
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-017
+    name: Assign verification-gradient zone explicitly before delegating to an agent
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-B-018
+    name: Separate the policy decision point from the policy enforcement point in access control
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  # --- Artifact (15 atoms) ---
+  - id: SC-A-001
+    name: Codify-with-explicit-NOT-codified
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-A-002
+    name: Frontend mock data detection
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-A-003
+    name: Defense-in-depth codification across multiple artifact locations
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-A-004
+    name: Layer 3 hook security audit
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-A-005
+    name: Encapsulation as security boundary in signed structs
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-A-006
+    name: Negative tests for deny-by-default
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-A-007
+    name: Zero-config security audit
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-A-008
+    name: Rule classification — critical vs advisory
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-A-009
+    name: Progressive disclosure architecture for CC artifacts
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-A-010
+    name: Token budget — baked-in vs external boundary decision
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-A-011
+    name: Framework-first check before building new functionality
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-A-012
+    name: Author CLAUDE.md as the Layer 2 master directive
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-A-013
+    name: Design agent specialisation routing as explicit Layer 1 Intent
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  - id: SC-A-014
+    name: Decompose milestones with hard-blocking approval gates
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-A-015
+    name: Structure the Layer 2 institutional knowledge corpus by artifact type
+    destination: co-codegen
+    action: canonical-in-co-codegen
+
+  # --- Practitioner (24 atoms) ---
+  - id: SC-P-001
+    name: Identify adjacent-but-disconnected modules as spec conformance gaps
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-002
+    name: Run empirical model-vs-rule ablation in a clean-room environment
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-003
+    name: Write cross-feature interaction tests before individual feature tests
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-004
+    name: Label every file with a disposition before starting implementation
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-005
+    name: Diagnose friction-gradient inversions where the best API has the worst discoverability
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-006
+    name: Decide whether new functionality is a module inside an existing package or a separate package
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-007
+    name: Define session completion state before starting, not after convergence is claimed
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-008
+    name: Trace deep dependency chains to find where a single broken link breaks the install path
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-009
+    name: Treat architecture documents as testable claims against the actual codebase
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-010
+    name: Red team CI, auth, and release processes for timing-dependent failures
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-011
+    name: Detect when an audit categorization method is structurally blind to the architecture it audits
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-012
+    name: Decide whether to demote or strengthen a rule when ablation shows partial redundancy
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-013
+    name: Treat internal estimate inconsistency as a high-confidence signal that at least one estimate is wrong
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-P-014
+    name: Distinguish pre-existing failures from pre-existing gaps when applying zero-tolerance Rule 1
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-015
+    name: End complex prompts with "what would invalidate this?" rather than "is this right?"
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-P-016
+    name: Detect overcorrection in both directions as a single contamination failure
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-017
+    name: Detect false-positive learning pipelines that report healthy metrics but produce noise
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-018
+    name: Split a multi-session blocker into fast-unblock and parallel-completion halves
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-019
+    name: Verify session-start continuity reaches the model, not just the terminal
+    destination: both
+    action: canonical-in-co-codegen-with-forge-reference
+
+  - id: SC-P-020
+    name: Treat the second occurrence of a drift class as a structural signal, not another incident
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-021
+    name: Grep the entire repo for dangling references immediately after every rename or delete
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-022
+    name: Author rules for the weakest model in the deployment envelope, not the strongest
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-023
+    name: Insert a gating workspace at integration seams rather than adding assertions to existing tests
+    destination: forge
+    action: forge-only
+
+  - id: SC-P-024
+    name: Intervene when a temporary workaround accumulates its second consumer
+    destination: forge
+    action: forge-only
+
+# Summary:
+#   co-codegen only:  23 atoms (action: canonical-in-co-codegen)
+#   both:             13 atoms (action: canonical-in-co-codegen-with-forge-reference)
+#   forge only:       21 atoms (action: forge-only)
+#   Total:            57 atoms

@@ -1,0 +1,148 @@
+---
+title: Future Application Passes — post-COC layer work queue
+date: 2026-04-07
+status: planning artifact, not authoring todo
+destination: forge
+---
+
+# Future Application Passes
+
+The current 57-atom catalog is the **COC layer** — craft evidence mined from the codegen application of CO. Per `rules/forge-scope.md` §2, all seven CO applications are in scope. Build order is usage-weighted: **COC → COR → COE → compliance → finance → governance → learners**. This file queues the next layers.
+
+**This is a planning artifact, not an authoring todo.** It names what's next, not what's being worked on now.
+
+## Cross-tagged atoms (already serve future applications)
+
+18 atoms in the current catalog are tagged `applications: [COC, COR, COE]` — their moves transfer directly to research and education applications. Future COR and COE passes build on top of these, not alongside them:
+
+**Brokerage (5)**:
+
+- SC-B-005 Spec-to-code conformance audit — any spec compliance work
+- SC-B-006 Multi-round red team to numeric convergence — universal red team craft
+- SC-B-008 Convergence-as-validation across independent reds — universal
+- SC-B-015 Reinterpret MUST rules from "human performs" to "human approves" — any rule system
+- SC-B-017 Verification gradient zone assignment — PACT governance, applies to any CO app
+
+**Artifact (1)**:
+
+- SC-A-001 Codify-with-explicit-NOT-codified — the codify discipline
+
+**Practitioner (12)**:
+
+- SC-P-002 Empirical model-vs-rule ablation
+- SC-P-007 Session completion state
+- SC-P-011 Audit categorization blindness to progressive disclosure
+- SC-P-012 Rule demotion vs strengthening judgment
+- SC-P-013 Estimate self-contradiction as high-confidence signal
+- SC-P-014 Zero-tolerance scope discipline
+- SC-P-015 Ask for the contradictions
+- SC-P-016 Detect overcorrection
+- SC-P-018 Split the long-pole
+- SC-P-020 Second occurrence as structural signal
+- SC-P-023 Insert a gate, not a check
+- SC-P-024 Fallback permanence detection
+
+## Queued application passes
+
+### Pass 2 — COR (CO for Research)
+
+**Spec source**: `terrene/foundation/docs/02-standards/co/applications/co-for-research.md`
+
+**Estimated evidence sources**:
+
+- Academic/thesis workspace at `terrene/foundation/workspaces/care-thesis/` (~66 entries flagged in D21 as spec-side evidence, not craft)
+- Publications corpus at `terrene/foundation/docs/02-standards/publications/`
+- Research-specific journal work in `loom/kailash-align/` (model evaluation, RLHF data collection) and `loom/kailash-ml/` (experiment tracking, ablation studies) — these are research-as-engineering, not research-as-scholarship, but may yield COR atoms
+- Any future `terrene/research/` workspace journals
+
+**Known coverage from cross-tagged atoms**: 18 atoms already tagged `[COC, COR, COE]` directly apply. Specifically for research: SC-P-002 (ablation), SC-P-011 (audit categorization), SC-P-013 (estimate contradiction), SC-P-022 (cross-model gap — especially relevant for research evaluations), SC-B-006 (multi-round red team).
+
+**Estimated new atoms needed**: ~15-25 atoms covering research-specific craft not captured by the COC layer:
+
+- Literature review as a move (not a phase)
+- Prior-work ledger construction
+- Reproducibility requirements as spec conformance
+- Publication-ready vs research-internal artifact discrimination
+- Citation as verification gradient
+- Peer review as convergence-as-validation
+
+**Readiness**: Medium. The CARE thesis workspace is a known source. A COR reverse-index pass analogous to the COC one (232 entries → 417 concepts → 30% coverage) would need to be built from scratch for COR sources.
+
+### Pass 3 — COE (CO for Education)
+
+**Spec source**: `terrene/foundation/docs/02-standards/co/applications/co-for-education.md`
+
+**Estimated evidence sources**:
+
+- Any co-ai / co-education workspace journals (check `atelier/co-education/` or equivalent)
+- Assessment design work in `terrene/` publications (Biggs constructive alignment, AI-resilient assessment)
+- Any learner feedback journals from past Terrene Open Academy programmes
+
+**Known coverage from cross-tagged atoms**: 18 atoms already tagged `[COC, COR, COE]` apply directly. Specifically for education: SC-P-007 (session completion state — applies to learner session structure), SC-P-014 (zero-tolerance scope discipline — applies to assessment scope), SC-A-001 (codify-with-NOT-codified — applies to lesson-plan authoring).
+
+**Estimated new atoms needed**: ~12-20 atoms covering education-specific craft:
+
+- Constructive alignment as a move (outcomes → activities → assessments)
+- AI-resilient assessment design
+- Rubric construction as spec conformance
+- Learner scaffolding as progressive disclosure
+- Cohort observation as false-positive learning detection
+- Mirror Thesis applied to learner development (6 categories)
+
+**Readiness**: Medium-low. The co-education workspace may not yet exist as a corpus source. May need to bootstrap from publications rather than from craft journals.
+
+### Pass 4 — Compliance
+
+**Spec source**: `terrene/foundation/docs/02-standards/co/applications/co-for-compliance.md`
+
+**Known coverage**: SC-A-007 (zero-config security audit), SC-A-006 (negative tests for deny-by-default), SC-B-018 (PDP/PEP separation) are compliance-relevant even though tagged [COC] only.
+
+**Estimated new atoms**: ~10-15 atoms covering regulatory mapping, audit trail construction, attestation craft.
+
+**Readiness**: Low. No known workspace corpus. Would build from compliance framework documents (SOC2, ISO27001, GDPR) mapped to CO five-layer architecture.
+
+### Pass 5 — Finance
+
+**Spec source**: `terrene/foundation/docs/02-standards/co/applications/co-for-finance.md`
+
+**Estimated new atoms**: ~8-12 atoms covering financial modelling as craft, monetary approval gates, budget envelope management (EATP §14 Financial Dimension is already cited by some atoms).
+
+**Readiness**: Low. No known corpus source.
+
+### Pass 6 — Governance
+
+**Spec source**: `terrene/foundation/docs/02-standards/co/applications/co-for-governance.md`
+
+**Known coverage**: PACT-themed atoms (SC-B-002, SC-B-004, SC-B-015, SC-B-017, SC-B-018, SC-A-005) are governance-adjacent.
+
+**Estimated new atoms**: ~10 atoms covering organisational governance specifics not captured by the PACT primitives-level atoms.
+
+**Readiness**: Medium. Overlaps with PACT platform work.
+
+### Pass 7 — Learners
+
+**Spec source**: `terrene/foundation/docs/02-standards/co/applications/co-for-learners.md`
+
+**Estimated new atoms**: ~8-12 atoms covering CO as applied to individual learner self-direction (distinct from COE which is about teaching others).
+
+**Readiness**: Low. No known corpus source.
+
+## What each future pass looks like
+
+Per the `rules/specs-first.md` methodology, each application pass repeats the COC pattern:
+
+1. **Enumerate spec concepts** for the application (analogous to `01-analysis/03-spec-index/`)
+2. **Identify corpus** of practitioner journals for the application (analogous to `01-analysis/04-reverse-index/`)
+3. **Classify entries** against spec concepts (analogous to the 232 → 417 classification)
+4. **Mine heavy-cited concepts** and contradictions for atom candidates
+5. **Author atoms** at the rigor bar (read-before-cite, verbatim quotes, polarity, modality)
+6. **Cross-tag** atoms that serve earlier applications
+7. **Red team** and verify
+8. **Route** to forge / co-codegen / both
+9. **Integrate** into the catalog with updated indexes
+
+Each pass is a full workspace cycle (analyze → todos → implement → redteam). The COC pass took ~D1 through D26 to reach 57 verified atoms. Subsequent passes should be faster because the format and rigor bar are now fixed.
+
+## Why this matters
+
+Without a queued list, the "all in scope" declaration from D20 would be a rule without a forward motion. Each application pass expands the library and the cross-tagging; the 18 already-cross-tagged atoms are the seed for every subsequent pass. The catalog grows by addition, not by replacement.
