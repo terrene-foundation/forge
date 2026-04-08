@@ -1,6 +1,6 @@
 # FORGE Skill Catalog
 
-The canonical, contributor-neutral library of 57 practitioner skill atoms for the CO ecosystem. This catalog is the **substance** of FORGE — moored in the four Foundation standards (CARE / EATP / CO / PACT) and grounded in 232 journal entries of real craft evidence.
+The canonical, contributor-neutral library of **67 practitioner skill atoms** for the CO ecosystem (57 COC-layer + 10 COR-layer). This catalog is the **substance** of FORGE — moored in the four Foundation standards (CARE / EATP / CO / PACT) and grounded in journal entries of real craft evidence from both codegen (232 entries) and research (~58 entries) corpora.
 
 **This is not a course.** Downstream role-tailored sequences live in `lyceum/courses/` and pull atoms from here. Different courses mix and match the same atoms without forking. Methodology content tagged `co-codegen` or `both` is also routed to `atelier/co-codegen/` for the broader CO ecosystem.
 
@@ -17,11 +17,11 @@ A skill atom is the minimum teachable unit of practitioner, artifact, or brokera
 
 ## Three craft layers
 
-| Layer            | What it is                                                                                               | Count | Destination         |
-| ---------------- | -------------------------------------------------------------------------------------------------------- | ----- | ------------------- |
-| **Brokerage**    | Operator + governance moves: sync, authority, variant classification, cross-SDK coordination             | 18    | mostly `co-codegen` |
-| **Artifact**     | What makes a CC artifact work: rules, hooks, defense-in-depth, progressive disclosure                    | 15    | mostly `both`       |
-| **Practitioner** | Session-level moves: prompting, attention, intervention, reading codegen behaviour, institutional memory | 24    | mostly `forge`      |
+| Layer            | What it is                                                                                                               | Count | Destination             |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------ | ----- | ----------------------- |
+| **Brokerage**    | Operator + governance moves: sync, authority, variant classification, cross-SDK coordination                             | 18    | mostly `co-codegen`     |
+| **Artifact**     | What makes a CC artifact work: rules, hooks, defense-in-depth, progressive disclosure                                    | 15    | mostly `both`           |
+| **Practitioner** | Session-level moves: prompting, attention, intervention, reading codegen behaviour, institutional memory, research craft | 34    | mixed (24 COC + 10 COR) |
 
 ## Index 1 — By craft layer
 
@@ -112,13 +112,32 @@ How the atom is learned:
 
 ## Index 5 — By application
 
-All 57 atoms are evidence for COC (codegen). **18 atoms** also apply directly to COR (research) and COE (education) — these are tagged `[COC, COR, COE]`:
+All 57 COC-layer atoms are evidence for COC (codegen). **18 atoms** are cross-tagged `[COC, COR, COE]` — they apply directly to research and education without reformulation:
 
 - **Brokerage (5)**: SC-B-005 spec-to-code conformance, SC-B-006 multi-round red team, SC-B-008 convergence-as-validation, SC-B-015 MUST-rule reinterpretation, SC-B-017 verification gradient zone assignment
 - **Artifact (1)**: SC-A-001 codify-with-NOT-codified
 - **Practitioner (12)**: SC-P-002, SC-P-007, SC-P-011, SC-P-012, SC-P-013, SC-P-014, SC-P-015, SC-P-016, SC-P-018, SC-P-020, SC-P-023, SC-P-024
 
-Future application passes (COR, COE, compliance, finance, governance, learners) will build on top of these cross-tagged atoms. See `future-passes.md`.
+### COR layer (10 atoms, added 2026-04-08)
+
+The COR application pass added 10 new practitioner atoms (SC-P-025 through SC-P-034) capturing research-specific craft not surfaced by the COC corpus. Evidence base: ~58 entries from `terrene/foundation/workspaces/care-thesis/journal/` plus `terrene/journal/0006-DISCOVERY-pact-skill-thesis-drift.md`.
+
+| Atom     | Title                                                       | Application     | Destination |
+| -------- | ----------------------------------------------------------- | --------------- | ----------- |
+| SC-P-025 | Tier-ranked literature search with verification             | [COR, COE]      | both        |
+| SC-P-026 | Citation integrity audit — misquotation and spec drift      | [COR, COC, COE] | both        |
+| SC-P-027 | Hostile reviewer simulation as preemptive defense           | [COR]           | both        |
+| SC-P-028 | Multi-perspective synthesis into minimal publishable model  | [COR]           | both        |
+| SC-P-029 | Post-publication gap check for recent literature            | [COR]           | both        |
+| SC-P-030 | Academic register calibration with detection-bias awareness | [COR]           | forge       |
+| SC-P-031 | Venue strategy as constraint envelope for argument scope    | [COR]           | forge       |
+| SC-P-032 | Margin note as deliberation artifact                        | [COR, COE]      | forge       |
+| SC-P-033 | Reflexivity diagnosis in self-referential research          | [COR]           | forge       |
+| SC-P-034 | Overclaim prevention — qualify every superlative            | [COR, COE]      | both        |
+
+The COR pass built on the 18 cross-tagged atoms as foundation rather than re-authoring them — see `.claude/workspaces/forge-cor/01-analysis/01-research/03-existing-cor-atoms-audit.md` for the audit.
+
+Future application passes (COE, compliance, finance, governance, learners) will follow the same pattern. See `future-passes.md`.
 
 ## How downstream consumers use this catalog
 
@@ -140,10 +159,13 @@ DISCOVERY and RISK journal entries cited as evidence become standalone teaching 
 
 ## Status
 
-- **57 atoms**, 18 brokerage + 15 artifact + 24 practitioner
-- **Status**: draft (verification pass pending — see `../.claude/workspaces/forge-curriculum/todos/active/M1-catalog-production.md` T1.1)
-- **Evidence base**: 232 journal entries from loom/terrene COC-layer corpus
-- **Spec coverage**: all top 15 heavy-cited concepts have ≥1 dedicated atom
-- **Red team round 1**: 0 CRITICAL, 0 HIGH (after fixes). 0 fabrications found in quote verification sample.
+- **67 atoms total**: 18 brokerage + 15 artifact + 34 practitioner (24 COC-layer + 10 COR-layer)
+- **COC-layer status**: verified (M1-M5 complete, red team rounds 2-4 converged)
+- **COR-layer status**: verified (initial pass, red team rounds 1-N converged 2026-04-08)
+- **Evidence base**: 232 COC-layer journal entries from loom/terrene + ~58 COR-layer entries from terrene/foundation/workspaces/care-thesis/
+- **Spec coverage**: all top 15 heavy-cited COC concepts have ≥1 dedicated atom; 10 COR-specific concepts have ≥1 dedicated atom
 
-Analysis history lives in `../.claude/workspaces/forge-curriculum/`. Decision log is `.claude/workspaces/forge-curriculum/01-analysis/02-synthesis/02-decision-log.md` (D1–D26).
+Analysis history lives in `../.claude/workspaces/`:
+
+- COC pass: `forge-curriculum/01-analysis/02-synthesis/02-decision-log.md` (D1–D27)
+- COR pass: `forge-cor/01-analysis/`

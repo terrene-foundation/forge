@@ -44,7 +44,9 @@ The current 57-atom catalog is the **COC layer** — craft evidence mined from t
 
 ## Queued application passes
 
-### Pass 2 — COR (CO for Research)
+### Pass 2 — COR (CO for Research) ✅ COMPLETE (2026-04-08)
+
+**Status**: Initial pass complete. 10 new atoms authored (SC-P-025 through SC-P-034). Workspace at `.claude/workspaces/forge-cor/`. See `catalog/README.md` Index 5 for the COR atom table.
 
 **Spec source**: `terrene/foundation/docs/02-standards/co/applications/co-for-research.md`
 
