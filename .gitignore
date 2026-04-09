@@ -44,11 +44,7 @@ htmlcov/
 # Jupyter
 .ipynb_checkpoints/
 
-# Claude Code
-.claude/learning/
-**/.claude/learning/
-.claude/workspaces/*/status.md
+# Claude Code — COC artifacts (not public)
+.claude/
+scripts/
 .session-notes
-
-# Corpus cache — ephemeral sandbox mirror of loom/ and terrene/ for subagent reads
-.claude/workspaces/forge-curriculum/01-analysis/00-corpus-cache/

@@ -75,11 +75,10 @@ forge/
     upstream-flags.md        Template-synced artifacts carrying stale language
   drills/
     specs/               57 drill spec files
-    exemplars/           10 fully expanded exemplar drills
+    exemplars/           15 fully expanded exemplar drills
   cases/
-    exemplars/           10 teaching cases (6-section format)
+    exemplars/           15 teaching cases (6-section format)
     case-candidates.md   25 ranked candidates for expansion
-  CLAUDE.md              Programme identity and workspace directives
   README.md              This file
   CHANGELOG.md           Release history
   LICENSE                Apache 2.0
