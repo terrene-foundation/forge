@@ -6,8 +6,8 @@
 
 ```
 drills/
-  specs/          # 57 drill spec files (frontmatter + drill text)
-  exemplars/      # 15 fully expanded exemplar drills
+  specs/          # 57 drill spec files (COC atoms, frontmatter + drill text)
+  exemplars/      # 25 fully expanded exemplar drills (15 COC + 10 COR)
   README.md       # This index
 ```
 
@@ -129,6 +129,25 @@ drills/
 | Drill ID    | Name                                                              | Modality | Difficulty | Time |
 | ----------- | ----------------------------------------------------------------- | -------- | ---------- | ---- |
 | DR-SC-P-015 | End complex prompts with "what would invalidate this?" rather tha | drill    | beginner   | 15m  |
+
+## COR Application — Research Craft (10 drills)
+
+Full exemplar drills for the COR (CO for Research) application pass. These cover academic writing and research craft skills. COR atoms have their drill spec embedded in the catalog atom file rather than in `drills/specs/`.
+
+| Drill ID    | Name                                  | Craft area      | Modality | Difficulty   | Time |
+| ----------- | ------------------------------------- | --------------- | -------- | ------------ | ---- |
+| DR-SC-P-025 | Tier-ranked literature search         | attend-how      | drill    | intermediate | 30m  |
+| DR-SC-P-026 | Citation integrity audit              | judge           | case     | intermediate | 30m  |
+| DR-SC-P-027 | Hostile reviewer simulation           | judge           | drill    | intermediate | 30m  |
+| DR-SC-P-028 | Multi-perspective synthesis           | decide          | case     | intermediate | 30m  |
+| DR-SC-P-029 | Post-publication gap check            | attend-how      | drill    | intermediate | 30m  |
+| DR-SC-P-030 | Academic register calibration         | attend-how      | case     | intermediate | 30m  |
+| DR-SC-P-031 | Venue strategy as constraint envelope | decide          | case     | intermediate | 30m  |
+| DR-SC-P-032 | Margin note as deliberation artifact  | act-communicate | drill    | intermediate | 30m  |
+| DR-SC-P-033 | Reflexivity diagnosis                 | judge           | case     | intermediate | 30m  |
+| DR-SC-P-034 | Overclaim prevention                  | judge           | drill    | intermediate | 30m  |
+
+**Spec lineage**: All 10 drills derive from CO §13 (Layer 2 — Context) via COR application. Primary spec concepts: CO §17 (Single Source of Truth — applied to citation integrity), CO §49 (Enforcement Reliability — applied to claim verification), CARE §6 (Trust Verification Bridge — applied to peer review).
 
 ## Index by practice modality
 

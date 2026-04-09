@@ -98,31 +98,31 @@ FORGE artifacts sit alongside CARE / EATP / CO / PACT in the Foundation's public
 
 The production FORGE library lives at the program root. Analysis artifacts live under `.claude/workspaces/forge-curriculum/`.
 
-| Path                                   | Contents                                                                                                                                                                                                                                                                        |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `catalog/`                             | **57 skill atoms** (18 brokerage + 15 artifact + 24 practitioner). The canonical, contributor-neutral library. Each atom has spec mooring, journal evidence, drill, and failure mode. Downstream courses and atelier/co-codegen pull from here.                                 |
-| `catalog/README.md`                    | Production index with 5 views (layer, craft area, spec lineage, modality, application)                                                                                                                                                                                          |
-| `drills/`                              | **57 drill specs + 10 fully expanded exemplars**. `specs/` holds one structured drill spec per atom. `exemplars/` holds 10 full-form drills with setup, task, model answer, scoring, and extensions. `README.md` indexes by craft area, modality, difficulty, and spec lineage. |
-| `cases/`                               | **10 exemplar teaching cases** lifted from DISCOVERY/RISK journal entries with spec-mooring overlay. Each case: situation → trigger → move → outcome → spec connection → discussion questions. `case-candidates.md` lists ranked candidates for future expansion.               |
-| `.claude/workspaces/forge-curriculum/` | Analysis workspace — decision log D1-D26+, spec index (417 concepts), reverse index (232 entries), 7 pre-rigor-bar specialist reports, M1-M5 todo milestones, red team round 2 findings                                                                                         |
+| Path                                   | Contents                                                                                                                                                                                                                                                                                              |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `catalog/`                             | **67 skill atoms** (18 brokerage + 15 artifact + 34 practitioner). The canonical, contributor-neutral library. Each atom has spec mooring, journal evidence, drill, and failure mode. Downstream courses and atelier/co-codegen pull from here.                                                       |
+| `catalog/README.md`                    | Production index with 5 views (layer, craft area, spec lineage, modality, application)                                                                                                                                                                                                                |
+| `drills/`                              | **57 drill specs + 25 fully expanded exemplars**. `specs/` holds one structured drill spec per COC atom. `exemplars/` holds 25 full-form drills (15 COC + 10 COR) with setup, task, model answer, scoring, and extensions. `README.md` indexes by craft area, modality, difficulty, and spec lineage. |
+| `cases/`                               | **25 exemplar teaching cases** lifted from DISCOVERY/RISK journal entries with spec-mooring overlay. Each case: situation → trigger → move → outcome → spec connection → discussion questions. All 25 candidates from `case-candidates.md` now expanded.                                              |
+| `.claude/workspaces/forge-curriculum/` | Analysis workspace — decision log D1-D26+, spec index (417 concepts), reverse index (232 entries), 7 pre-rigor-bar specialist reports, M1-M5 todo milestones, red team round 2 findings                                                                                                               |
 
 ## Rules Index
 
-| Concern                                                                    | Rule File                                                                                 |
-| -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Foundation independence (no commercial references)                         | `rules/independence.md`                                                                   |
-| FORGE scope, four standards, applications, PACT layers, routing, rigor bar | `rules/forge-scope.md`                                                                    |
-| Specs as index, craft as substance                                         | `rules/specs-first.md`                                                                    |
-| Library-not-tracks organisation                                            | `rules/dual-track.md`                                                                     |
-| Framework-first technical content                                          | `rules/framework-first.md`                                                                |
-| CC artifact quality (descriptions, sizes, progressive disclosure)          | `rules/cc-artifacts.md`                                                                   |
-| Canonical terminology                                                      | `rules/terrene-naming.md` (note: still says "trinity" — PACT graduation pending upstream) |
-| Communication style (plain language by default)                            | `rules/communication.md`                                                                  |
-| Autonomous execution model (no human-team framing)                         | `rules/autonomous-execution.md`                                                           |
-| Agent orchestration & specialist delegation                                | `rules/agents.md`                                                                         |
-| Git workflow                                                               | `rules/git.md`                                                                            |
-| Security                                                                   | `rules/security.md`                                                                       |
-| Zero-tolerance (no stubs, no fallbacks, no workarounds)                    | `rules/zero-tolerance.md`                                                                 |
+| Concern                                                                    | Rule File                       |
+| -------------------------------------------------------------------------- | ------------------------------- |
+| Foundation independence (no commercial references)                         | `rules/independence.md`         |
+| FORGE scope, four standards, applications, PACT layers, routing, rigor bar | `rules/forge-scope.md`          |
+| Specs as index, craft as substance                                         | `rules/specs-first.md`          |
+| Library-not-tracks organisation                                            | `rules/dual-track.md`           |
+| Framework-first technical content                                          | `rules/framework-first.md`      |
+| CC artifact quality (descriptions, sizes, progressive disclosure)          | `rules/cc-artifacts.md`         |
+| Canonical terminology                                                      | `rules/terrene-naming.md`       |
+| Communication style (plain language by default)                            | `rules/communication.md`        |
+| Autonomous execution model (no human-team framing)                         | `rules/autonomous-execution.md` |
+| Agent orchestration & specialist delegation                                | `rules/agents.md`               |
+| Git workflow                                                               | `rules/git.md`                  |
+| Security                                                                   | `rules/security.md`             |
+| Zero-tolerance (no stubs, no fallbacks, no workarounds)                    | `rules/zero-tolerance.md`       |
 
 ## Current Analysis State
 

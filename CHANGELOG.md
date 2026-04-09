@@ -4,6 +4,26 @@ All notable changes to FORGE are documented in this file.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.4.0] - 2026-04-09
+
+### Added
+
+- 10 COR drill exemplars: SC-P-025 (tier-ranked literature search), SC-P-026 (citation integrity audit),
+  SC-P-027 (hostile reviewer simulation), SC-P-028 (multi-perspective synthesis),
+  SC-P-029 (post-publication gap check), SC-P-030 (academic register calibration),
+  SC-P-031 (venue strategy as constraint envelope), SC-P-032 (margin note as deliberation),
+  SC-P-033 (reflexivity diagnosis), SC-P-034 (overclaim prevention). Total exemplars: 15 -> 25
+- 10 new teaching cases: CASE-16 (silent drift divergence), CASE-17 (layer5 not aspirational),
+  CASE-18 (vacancy asymmetric enforcement), CASE-19 (orphans stales misclassified),
+  CASE-20 (adjacent disconnected), CASE-21 (orphan audit wrong), CASE-22 (decision reversal),
+  CASE-23 (audited side ahead), CASE-24 (146kb rules tokens), CASE-25 (timing sidechannel).
+  Total cases: 15 -> 25. All 25 candidates now expanded.
+
+### Fixed
+
+- Upstream "trinity" language in terrene-naming.md and behavioral-guidelines.md updated to "quartet"
+  at loom/ source; forge local copy synced manually. upstream-flags.md Flag 1 resolved.
+
 ## [0.3.0] - 2026-04-09
 
 ### Added
