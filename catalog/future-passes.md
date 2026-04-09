@@ -70,28 +70,15 @@ The current 57-atom catalog is the **COC layer** — craft evidence mined from t
 
 **Readiness**: Medium. The CARE thesis workspace is a known source. A COR reverse-index pass analogous to the COC one (232 entries → 417 concepts → 30% coverage) would need to be built from scratch for COR sources.
 
-### Pass 3 — COE (CO for Education)
+### Pass 3 — COE (CO for Education) — coordinated from rr-coe
+
+**Status**: Moved to `lyceum/courses/rr-coe/coe-application-pass.md` as of 2026-04-09. The COE application pass is now coordinated from the RR CoE course repo, where real teaching observations from Cohort 1 will supply first-person craft evidence. New COE atoms discovered during course design are proposed back to forge for authoring per lane isolation.
 
 **Spec source**: `terrene/foundation/docs/02-standards/co/applications/co-for-education.md`
 
-**Estimated evidence sources**:
+**Known coverage**: 22 atoms already tagged COE (18 cross-tagged `[COC, COR, COE]` + 4 COR atoms also tagged COE). See `rr-coe/coe-application-pass.md` for the full list and estimated ~12-20 new atoms needed.
 
-- Any co-ai / co-education workspace journals (check `atelier/co-education/` or equivalent)
-- Assessment design work in `terrene/` publications (Biggs constructive alignment, AI-resilient assessment)
-- Any learner feedback journals from past Terrene Open Academy programmes
-
-**Known coverage from cross-tagged atoms**: 18 atoms already tagged `[COC, COR, COE]` apply directly. Specifically for education: SC-P-007 (session completion state — applies to learner session structure), SC-P-014 (zero-tolerance scope discipline — applies to assessment scope), SC-A-001 (codify-with-NOT-codified — applies to lesson-plan authoring).
-
-**Estimated new atoms needed**: ~12-20 atoms covering education-specific craft:
-
-- Constructive alignment as a move (outcomes → activities → assessments)
-- AI-resilient assessment design
-- Rubric construction as spec conformance
-- Learner scaffolding as progressive disclosure
-- Cohort observation as false-positive learning detection
-- Mirror Thesis applied to learner development (6 categories)
-
-**Readiness**: Medium-low. The co-education workspace may not yet exist as a corpus source. May need to bootstrap from publications rather than from craft journals.
+**Readiness**: Medium. Cohort 1 instruction (starting soon) will produce the craft journal evidence that the prior estimate said was missing.
 
 ### Pass 4 — Compliance
 
