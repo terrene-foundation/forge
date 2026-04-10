@@ -7,7 +7,7 @@
 ```
 drills/
   specs/          # 57 drill spec files (COC atoms, frontmatter + drill text)
-  exemplars/      # 25 fully expanded exemplar drills (15 COC + 10 COR)
+  exemplars/      # 67 fully expanded exemplar drills (57 COC + 10 COR)
   README.md       # This index
 ```
 

@@ -4,6 +4,20 @@ All notable changes to FORGE are documented in this file.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.5.0] - 2026-04-10
+
+### Added
+
+- 42 COC drill exemplars completing 100% coverage: all 57 COC atoms now have full exemplars
+  (setup, task, model answer, scoring rubric, extensions). Covers 13 artifact-layer,
+  12 brokerage-layer, and 17 practitioner-layer atoms. Total exemplars: 25 -> 67.
+- M6 milestone (drill exemplar expansion) in forge-curriculum workspace
+
+### Changed
+
+- Format spec updated: extensions accept 2-3 variants (was 2)
+- drills/README.md: added COR Application section, updated exemplar count to 67
+
 ## [0.4.0] - 2026-04-09
 
 ### Added
