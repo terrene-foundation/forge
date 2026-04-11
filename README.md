@@ -1,6 +1,6 @@
 # FORGE — Foundation for Orchestration, Reasoning, and Generative Engineering
 
-A Terrene Open Academy programme. 67 skill atoms. 57 drills. 15 teaching cases. The canonical practitioner library for the CO ecosystem.
+A Terrene Open Academy programme. 67 skill atoms. 67 drills. 25 teaching cases. The canonical practitioner library for the CO ecosystem.
 
 FORGE distils the four Terrene Foundation standards — **CARE** (philosophy), **EATP** (protocol), **CO** (methodology), **PACT** (governance) — into concrete, drillable skills grounded in 232 journal entries of real practitioner craft. It is a library, not a course. Downstream courses in `lyceum/courses/` pull atoms from here and sequence them for specific audiences.
 
@@ -9,10 +9,9 @@ FORGE distils the four Terrene Foundation standards — **CARE** (philosophy), *
 | Content                 | Count | Description                                                               |
 | ----------------------- | ----- | ------------------------------------------------------------------------- |
 | **Skill atoms**         | 67    | Minimum teachable units of practitioner, artifact, and brokerage craft    |
-| **Drill specs**         | 57    | Structured practice exercises, one per COC-layer atom                     |
-| **Drill exemplars**     | 15    | Fully expanded drills with setup, task, model answer, scoring, extensions |
-| **Teaching cases**      | 15    | Journal-sourced narrative cases with spec-mooring overlay                 |
-| **Case candidates**     | 25    | Ranked backlog for future case expansion (10 remaining)                   |
+| **Drill specs**         | 67    | Structured practice exercises, one per atom                               |
+| **Drill exemplars**     | 67    | Fully expanded drills with setup, task, model answer, scoring, extensions |
+| **Teaching cases**      | 25    | Journal-sourced narrative cases with spec-mooring overlay                 |
 | **Co-codegen variants** | 13    | Methodology atoms adapted for the broader CO ecosystem                    |
 
 ## Four Standards, One Quartet
@@ -67,6 +66,7 @@ Example: **SC-B-005 Spec-to-code conformance audit** maps 8 normative spec state
 forge/
   catalog/               67 skill atoms (brokerage/, artifact/, practitioner/)
     README.md            Production index with 5 views
+    teaching-sequences.md    5 ordered atom sequences
     routing-manifest.yaml    Dual-destination routing (forge / co-codegen / both)
     co-codegen-variants/     13 variants for atelier/co-codegen/
     co-codegen-staging.md    Sync staging manifest
@@ -75,10 +75,16 @@ forge/
     upstream-flags.md        Template-synced artifacts carrying stale language
   drills/
     specs/               57 drill spec files
-    exemplars/           15 fully expanded exemplar drills
+    exemplars/           67 fully expanded exemplar drills (57 COC + 10 COR)
   cases/
-    exemplars/           15 teaching cases (6-section format)
-    case-candidates.md   25 ranked candidates for expansion
+    exemplars/           25 teaching cases (6-section format)
+    case-candidates.md   25 candidates (all expanded)
+  teaching/              Reusable course-design scaffolding
+    outcomes.md          67 learning outcome statements (one per atom)
+    prereqs.md           Atom-to-atom prerequisite graph (33 hard + ~190 soft edges)
+    rubrics.md           Mastery rubrics per atom (novice → advanced)
+    clusters.md          8 themed atom bundles for course selection
+    modalities/          5 practice modality guides (drill, case, build, brokerage-rep, observation)
   README.md              This file
   CHANGELOG.md           Release history
   LICENSE                Apache 2.0
@@ -89,11 +95,13 @@ forge/
 
 FORGE is a library. Courses consume it. The pattern:
 
-1. **Select atoms** by craft area, application, spec lineage, or modality from `catalog/README.md`
-2. **Sequence them** into your course structure (FORGE imposes no sequence)
-3. **Use drills** from `drills/specs/` or expand exemplars from `drills/exemplars/`
-4. **Use cases** from `cases/exemplars/` for narrative teaching
-5. **Propose new atoms** when you discover gaps — they go into FORGE first, then your course inherits them
+1. **Browse clusters** in `teaching/clusters.md` for themed atom bundles matching your audience
+2. **Select atoms** by craft area, application, spec lineage, or modality from `catalog/README.md`
+3. **Check outcomes** in `teaching/outcomes.md` for one-sentence learning objectives per atom
+4. **Sequence them** using the prerequisite graph in `teaching/prereqs.md`
+5. **Use drills** from `drills/specs/` or expand exemplars from `drills/exemplars/`
+6. **Use cases** from `cases/exemplars/` for narrative teaching
+7. **Propose new atoms** when you discover gaps — they go into FORGE first, then your course inherits them
 
 Atoms tagged `destination: both` also appear in `atelier/co-codegen/` for the broader CO ecosystem.
 

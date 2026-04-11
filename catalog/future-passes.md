@@ -76,9 +76,11 @@ The current 57-atom catalog is the **COC layer** — craft evidence mined from t
 
 **Spec source**: `terrene/foundation/docs/02-standards/co/applications/co-for-education.md`
 
-**Known coverage**: 22 atoms already tagged COE (18 cross-tagged `[COC, COR, COE]` + 4 COR atoms also tagged COE). See `rr-coe/coe-application-pass.md` for the full list and estimated ~12-20 new atoms needed.
+**Prep analysis**: `.claude/workspaces/forge-coe/coe-spec-index.md` enumerates 37 COE spec concepts. `.claude/workspaces/forge-coe/coe-coverage-map.md` maps the 24 cross-tagged atoms against those concepts: 5 COVERED, 18 PARTIAL, 14 GAP.
 
-**Readiness**: Medium. Cohort 1 instruction (starting soon) will produce the craft journal evidence that the prior estimate said was missing.
+**Known coverage**: 24 atoms already tagged COE (20 cross-tagged `[COC, COR, COE]` + 4 COR atoms also tagged COE). 14 spec concepts have no existing atom. Critical gaps: COE Spectrum (4 levels), assessment workflow, assessment agent design, deliberation-log-as-assessment. See `rr-coe/coe-application-pass.md` for coordination and estimated 14-17 new atoms needed.
+
+**Readiness**: Medium. Cohort 1 instruction (starting soon) will produce the craft journal evidence. Prep analysis identifies exactly which gaps need evidence — Cohort 1 journals should target the 7 gap clusters listed in the coverage map.
 
 ### Pass 4 — Compliance
 

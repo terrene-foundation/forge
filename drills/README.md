@@ -1,12 +1,12 @@
 # FORGE Drill Library
 
-**57 drill specs** extracted from the skill atom catalog. Each drill spec captures the "How to drill it" section from its source atom as a structured, reusable practice unit.
+**67 drill specs** extracted from the skill atom catalog. Each drill spec captures the "How to drill it" section from its source atom as a structured, reusable practice unit.
 
 ## Directory structure
 
 ```
 drills/
-  specs/          # 57 drill spec files (COC atoms, frontmatter + drill text)
+  specs/          # 67 drill spec files (57 COC + 10 COR, frontmatter + drill text)
   exemplars/      # 67 fully expanded exemplar drills (57 COC + 10 COR)
   README.md       # This index
 ```
@@ -132,7 +132,7 @@ drills/
 
 ## COR Application — Research Craft (10 drills)
 
-Full exemplar drills for the COR (CO for Research) application pass. These cover academic writing and research craft skills. COR atoms have their drill spec embedded in the catalog atom file rather than in `drills/specs/`.
+Full drill specs and exemplar drills for the COR (CO for Research) application pass. These cover academic writing and research craft skills. Drill specs in `drills/specs/`, exemplars in `drills/exemplars/`.
 
 | Drill ID    | Name                                  | Craft area      | Modality | Difficulty   | Time |
 | ----------- | ------------------------------------- | --------------- | -------- | ------------ | ---- |

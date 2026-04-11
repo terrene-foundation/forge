@@ -107,3 +107,43 @@ SC-P-009 (architecture doc as contract — at review gates)
 **Spec thread**: CO §39 (Learning persistence) → CO §33 (Phase Analyze) → CO §3.2 (Convention Drift) → CO §29 (Evidence-Based Completion)
 
 **Teaching note**: This sequence maps to a session timeline. SC-P-019 fires at minute 0 (session start). SC-P-004 fires during the first phase (analysis). SC-P-020 and SC-P-024 fire during the implementation loop. SC-P-009 fires at review gates. The progression teaches practitioners to pay attention at the right moment in the workflow, not just to the right things.
+
+---
+
+## COR Application Sequences
+
+The following sequences cover atoms from the COR (CO for Research) layer. They are listed separately because they teach research-as-scholarship craft, not codegen craft, but follow the same sequencing logic: each atom's output feeds the next atom's input.
+
+## Sequence 6: Literature Integrity Workflow
+
+**4 atoms, ordered by the research lifecycle:**
+
+```
+SC-P-025 (tier-ranked literature search — builds the evidence base)
+    ↓ produces: ranked literature base with VERIFIED citations per area
+SC-P-026 (citation integrity audit — verifies the evidence base)
+    ↓ produces: verified citations with misquotation/drift flags resolved
+SC-P-029 (post-publication gap check — maintains currency)
+    ↓ produces: MUST CITE / SHOULD CITE / DO NOT CITE classification for recent work
+SC-P-034 (overclaim prevention — qualifies claims derived from the evidence)
+    ↓ produces: qualified novelty claims with scope + evidence + temporal qualifier
+```
+
+**Spec thread**: CO §1 (Institutional Knowledge Thesis — the literature IS the institutional knowledge) → CO §49 (Verification requirements) → COR § Layer 3 (no unverified citations, no fabricated references, no overclaims) → COR § Layer 1 (literature-researcher + claims-verifier agents)
+
+**Teaching note**: SC-P-025 must come first — everything downstream depends on having a verified literature base. SC-P-026 is the integrity check on that base. SC-P-029 is the temporal maintenance move (the base ages; this atom keeps it current). SC-P-034 comes last because the qualification discipline depends on having both the base (025) and the gap check evidence (029) to cite as proof that the claimed scope is empty. A practitioner who tries overclaim prevention without a verified literature base produces the generic hedges ("to the best of our knowledge") that the atom explicitly rejects.
+
+## Sequence 7: Peer Review Resilience
+
+**2 atoms, ordered by the critique lifecycle:**
+
+```
+SC-P-027 (hostile reviewer simulation — generates the attack surface)
+    ↓ produces: 3+ hostile reviews from different disciplinary perspectives
+SC-P-028 (multi-perspective synthesis — resolves the attacks into a revision path)
+    ↓ produces: convergent strengths/failures + minimal publishable model + revision path
+```
+
+**Spec thread**: CO §28 (Convergence requirements) → CO §5.4 (Independent verification — multiple hostile perspectives are defense-in-depth for the argument) → COR § Layer 4 (/challenge command gates: FATAL findings block section continuation)
+
+**Teaching note**: SC-P-027 generates the critiques; SC-P-028 synthesizes them. Running 028 without 027 produces a synthesis from a single perspective that merely rearranges concerns rather than resolving them. Running 027 without 028 produces a collection of hostile reviews that the practitioner responds to individually (whack-a-mole), which is the failure mode 028 explicitly corrects. The two-atom sequence mirrors the COC Red Team / Convergence sequence (SC-B-005 → SC-B-006 → SC-B-008 → SC-P-011) at a smaller scale: generate critiques → synthesize to convergence. This parallel can be used in courses that teach both COC and COR to show how the same convergence pattern appears in different CO applications.
