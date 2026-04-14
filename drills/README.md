@@ -181,7 +181,7 @@ Full drill specs and exemplar drills for the COR (CO for Research) application p
 | DR-SC-B-007 | Worktree-per-agent for safe parallel execution                   | institutional-memory, intervene-how | advanced   | 45m  |
 | DR-SC-P-002 | Run empirical model-vs-rule ablation in a clean-room environment | attend-how                          | advanced   | 45m  |
 
-### case (15 drills)
+### case (20 drills)
 
 | Drill ID    | Name                                                              | Craft area                  | Difficulty   | Time |
 | ----------- | ----------------------------------------------------------------- | --------------------------- | ------------ | ---- |
@@ -200,8 +200,13 @@ Full drill specs and exemplar drills for the COR (CO for Research) application p
 | DR-SC-P-020 | Treat the second occurrence of a drift class as a structural sign | attend-when                 | intermediate | 30m  |
 | DR-SC-P-022 | Author rules for the weakest model in the deployment envelope, no | behaviour, attend-how       | intermediate | 30m  |
 | DR-SC-P-024 | Intervene when a temporary workaround accumulates its second cons | attend-when, intervene-when | intermediate | 30m  |
+| DR-SC-P-026 | Citation integrity audit                                          | judge                       | intermediate | 30m  |
+| DR-SC-P-028 | Multi-perspective synthesis                                       | decide                      | intermediate | 30m  |
+| DR-SC-P-030 | Academic register calibration                                     | attend-how                  | intermediate | 30m  |
+| DR-SC-P-031 | Venue strategy as constraint envelope                             | decide                      | intermediate | 30m  |
+| DR-SC-P-033 | Reflexivity diagnosis                                             | judge                       | intermediate | 30m  |
 
-### drill (21 drills)
+### drill (26 drills)
 
 | Drill ID    | Name                                                              | Craft area                          | Difficulty   | Time |
 | ----------- | ----------------------------------------------------------------- | ----------------------------------- | ------------ | ---- |
@@ -226,6 +231,11 @@ Full drill specs and exemplar drills for the COR (CO for Research) application p
 | DR-SC-P-019 | Verify session-start continuity reaches the model, not just the t | attend-when, institutional-memory   | intermediate | 30m  |
 | DR-SC-P-021 | Grep the entire repo for dangling references immediately after ev | intervene-how                       | beginner     | 15m  |
 | DR-SC-P-023 | Insert a gating workspace at integration seams rather than adding | intervene-how                       | beginner     | 15m  |
+| DR-SC-P-025 | Tier-ranked literature search                                     | attend-how                          | intermediate | 30m  |
+| DR-SC-P-027 | Hostile reviewer simulation                                       | judge                               | intermediate | 30m  |
+| DR-SC-P-029 | Post-publication gap check                                        | attend-how                          | intermediate | 30m  |
+| DR-SC-P-032 | Margin note as deliberation artifact                              | act-communicate                     | intermediate | 30m  |
+| DR-SC-P-034 | Overclaim prevention                                              | judge                               | intermediate | 30m  |
 
 ### observation (1 drills)
 
@@ -254,7 +264,7 @@ Full drill specs and exemplar drills for the COR (CO for Research) application p
 | DR-SC-P-021 | Grep the entire repo for dangling references immediately after ev | drill    | intervene-how        | 15m  |
 | DR-SC-P-023 | Insert a gating workspace at integration seams rather than adding | drill    | intervene-how        | 15m  |
 
-### intermediate (37 drills)
+### intermediate (47 drills)
 
 | Drill ID    | Name                                                              | Modality      | Craft area                           | Time |
 | ----------- | ----------------------------------------------------------------- | ------------- | ------------------------------------ | ---- |
@@ -295,6 +305,16 @@ Full drill specs and exemplar drills for the COR (CO for Research) application p
 | DR-SC-P-020 | Treat the second occurrence of a drift class as a structural sign | case          | attend-when                          | 30m  |
 | DR-SC-P-022 | Author rules for the weakest model in the deployment envelope, no | case          | behaviour, attend-how                | 30m  |
 | DR-SC-P-024 | Intervene when a temporary workaround accumulates its second cons | case          | attend-when, intervene-when          | 30m  |
+| DR-SC-P-025 | Tier-ranked literature search                                     | drill         | attend-how                           | 30m  |
+| DR-SC-P-026 | Citation integrity audit                                          | case          | judge                                | 30m  |
+| DR-SC-P-027 | Hostile reviewer simulation                                       | drill         | judge                                | 30m  |
+| DR-SC-P-028 | Multi-perspective synthesis                                       | case          | decide                               | 30m  |
+| DR-SC-P-029 | Post-publication gap check                                        | drill         | attend-how                           | 30m  |
+| DR-SC-P-030 | Academic register calibration                                     | case          | attend-how                           | 30m  |
+| DR-SC-P-031 | Venue strategy as constraint envelope                             | case          | decide                               | 30m  |
+| DR-SC-P-032 | Margin note as deliberation artifact                              | drill         | act-communicate                      | 30m  |
+| DR-SC-P-033 | Reflexivity diagnosis                                             | case          | judge                                | 30m  |
+| DR-SC-P-034 | Overclaim prevention                                              | drill         | judge                                | 30m  |
 
 ### advanced (6 drills)
 
@@ -309,7 +329,7 @@ Full drill specs and exemplar drills for the COR (CO for Research) application p
 
 ## Index by spec lineage (primary standard)
 
-### CO (56 drills)
+### CO (66 drills)
 
 | Drill ID    | Name                                                    | Spec lineage                                                                     | Difficulty   | Time |
 | ----------- | ------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------ | ---- |
@@ -369,6 +389,16 @@ Full drill specs and exemplar drills for the COR (CO for Research) application p
 | DR-SC-P-022 | Author rules for the weakest model in the deployment en | CO §1 — Institutional Knowledge Thesis; CO §22 — Advisory Rules                  | intermediate | 30m  |
 | DR-SC-P-023 | Insert a gating workspace at integration seams rather t | CO §27 — Structured Workflow; CO §28 — Approval Gate                             | beginner     | 15m  |
 | DR-SC-P-024 | Intervene when a temporary workaround accumulates its s | CO §3.2 — Convention Drift (Failure Mode); CO §5 — Deterministic Enforcement Ove | intermediate | 30m  |
+| DR-SC-P-025 | Tier-ranked literature search                           | CO §1 — Institutional Knowledge Thesis; CO §49 — Verification requirements       | intermediate | 30m  |
+| DR-SC-P-026 | Citation integrity audit                                | CO §49 — Verification requirements; COR § Layer 3 — no fabricated references     | intermediate | 30m  |
+| DR-SC-P-027 | Hostile reviewer simulation                             | CO §28 — Convergence requirements; COR § Layer 1 — argument-critic agent         | intermediate | 30m  |
+| DR-SC-P-028 | Multi-perspective synthesis                             | CO §28 — Convergence requirements; CO §5.4 — Independent verification            | intermediate | 30m  |
+| DR-SC-P-029 | Post-publication gap check                              | CO §1 — Institutional Knowledge Thesis; COR § Layer 5 — GAP entry type           | intermediate | 30m  |
+| DR-SC-P-030 | Academic register calibration                           | COR § Principle 8 — Authentic Voice Preservation; COR § Layer 2 — academic-writi | intermediate | 30m  |
+| DR-SC-P-031 | Venue strategy as constraint envelope                   | COR § EATP Integration — Constraint envelope; CARE §02-architecture/02           | intermediate | 30m  |
+| DR-SC-P-032 | Margin note as deliberation artifact                    | COR § Layer 5 — MARGIN entry type; CO §39 — Knowledge capture                    | intermediate | 30m  |
+| DR-SC-P-033 | Reflexivity diagnosis                                   | COR § Honest Limitations; CO §28 — Convergence requirements                      | intermediate | 30m  |
+| DR-SC-P-034 | Overclaim prevention                                    | COR § Layer 3 — no overclaims; COR § Layer 1 — claims-verifier agent             | intermediate | 30m  |
 
 ### PACT (9 drills)
 

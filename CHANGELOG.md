@@ -4,6 +4,43 @@ All notable changes to FORGE are documented in this file.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.7.0] - 2026-04-14
+
+### Added
+
+- **Teaching scaffolding layer** (`teaching/`) — reusable course-design support for downstream courses:
+  - `outcomes.md` — 67 one-sentence learning outcomes (one per atom)
+  - `prereqs.md` — atom-to-atom prerequisite graph (32 hard + ~190 soft edges, 7 topological layers)
+  - `rubrics.md` — 67 mastery rubrics (novice → developing → proficient → advanced)
+  - `clusters.md` — 8 themed atom bundles (security, PACT governance, cross-SDK, research,
+    institutional memory, diagnostic attention, cross-application, session discipline)
+  - `facilitation.md` — 25 case facilitation notes (common wrong answers, probes, push-backs)
+  - `modalities/` — 5 practice modality guides (drill, case, build, brokerage-rep, observation)
+- 10 COR drill spec files (SC-P-025 through SC-P-034) matching COC format. Total drill specs: 57 → 67
+- 2 COR teaching sequences added to `catalog/teaching-sequences.md`:
+  literature integrity workflow (4 atoms), peer review resilience (2 atoms). Total sequences: 5 → 7
+- COE prep analysis at `.claude/workspaces/forge-coe/`:
+  37 spec concepts enumerated, 24 cross-tagged atoms mapped, 14 gaps identified,
+  7 evidence clusters for Cohort 1 to target, estimated 14-17 new atoms needed
+
+### Fixed
+
+- Red team round 1 on teaching scaffolding (10 findings, all resolved):
+  - outcomes.md: SC-A-009 rewritten from drill mechanics to transferable capability,
+    SC-A-003 artifact types corrected, SC-P-010 language-agnostic, SC-B-012 specificity removed
+  - prereqs.md: SC-B-007←SC-B-013 reclassified hard→soft (32 hard edges, 38 Layer-0 atoms)
+  - rubrics.md: SC-A-009 novice mental-state language replaced with observable signal
+  - clusters.md: cross-application count 22→24, "not in cluster" count 5→10,
+    PACT governance description corrected, SC-P-026 tag fixed
+
+### Changed
+
+- README.md: counts updated (67 drill specs, 67 exemplars, 25 cases), repository structure
+  updated with teaching/ directory, course designer workflow rewritten with 8-step process
+- CLAUDE.md: library structure table updated with teaching/ entry
+- future-passes.md: COE atom count corrected 22→24, gap analysis reference added
+- drills/README.md: COR section updated to reference drill spec files
+
 ## [0.5.0] - 2026-04-10
 
 ### Added
