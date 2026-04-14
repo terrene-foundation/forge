@@ -24,19 +24,18 @@ Extraction rules applied:
 
 Rough layering by dependency depth (atoms at Layer 0 have no hard prereqs; atoms at Layer N have hard prereqs only at layers 0..N-1).
 
-### Layer 0 — foundational (no hard prereqs, 37 atoms)
+### Layer 0 — foundational (no hard prereqs, 38 atoms)
 
-Brokerage (9): SC-B-004, SC-B-005, SC-B-009, SC-B-010, SC-B-013, SC-B-015, SC-B-016, SC-B-017, SC-B-018
+Brokerage (10): SC-B-004, SC-B-005, SC-B-007, SC-B-009, SC-B-010, SC-B-013, SC-B-015, SC-B-016, SC-B-017, SC-B-018
 
 Artifact (10): SC-A-002, SC-A-003, SC-A-004, SC-A-005, SC-A-006, SC-A-007, SC-A-009, SC-A-010, SC-A-011, SC-A-013
 
 Practitioner (18): SC-P-001, SC-P-002, SC-P-003, SC-P-005, SC-P-007, SC-P-008, SC-P-010, SC-P-013, SC-P-014, SC-P-015, SC-P-017, SC-P-019, SC-P-025, SC-P-027, SC-P-030, SC-P-031, SC-P-032, SC-P-033
 
-### Layer 1 — one hard prereq deep (13 atoms)
+### Layer 1 — one hard prereq deep (12 atoms)
 
 - SC-B-001 (requires: SC-B-010)
 - SC-B-006 (requires: SC-B-005)
-- SC-B-007 (requires: SC-B-013)
 - SC-A-012 (requires: SC-A-013)
 - SC-P-004 (requires: SC-P-019)
 - SC-P-006 (requires: SC-A-011)
@@ -108,7 +107,6 @@ Practitioner (18): SC-P-001, SC-P-002, SC-P-003, SC-P-005, SC-P-007, SC-P-008, S
 | SC-P-020    | SC-P-004        | Teaching sequence 5: disposition labelling at analysis start precedes second-occurrence recognition during implementation                                                                         |
 | SC-P-024    | SC-P-020        | Teaching sequence 5: parallel principle — "the second occurrence of a drift class triggers structural intervention, just as the second consumer of a workaround triggers permanence intervention" |
 | SC-P-009    | SC-P-024        | Teaching sequence 5: fallback permanence detection during implementation precedes architecture-doc-as-contract review at review gates                                                             |
-| SC-B-007    | SC-B-013        | "the dependency map determines which worktrees can run concurrently; worktree isolation is the mechanism, dependency mapping is the governance"                                                   |
 | SC-P-006    | SC-A-011        | "the framework-first check fires before the package boundary decision; if the functionality already exists in a framework, the boundary question is moot"                                         |
 | SC-P-018    | SC-B-013        | "mapping dependencies is the prerequisite move that reveals which blocker to split"                                                                                                               |
 | SC-P-018    | SC-P-013        | "the estimate contradiction that surfaces the blocker's true duration is what motivates the split; without catching the 2-3 vs 7 session disagreement, the split would never be proposed"         |
@@ -464,8 +462,8 @@ Each entry lists the atom's hard and soft prereqs (what the atom requires or is 
 
 #### SC-B-007 — Worktree-per-agent
 
-**Hard prereqs:** SC-B-013
-**Soft prereqs:** SC-B-004, SC-B-006, SC-B-017
+**Hard prereqs:** none
+**Soft prereqs:** SC-B-004, SC-B-006, SC-B-013, SC-B-017
 
 #### SC-B-008 — Convergence-as-validation across independent reds
 
@@ -785,12 +783,12 @@ Note that SC-A-008 appears in two sequences (seq 1 via SC-P-016, seq 4 via SC-A-
 
 ## Verification checks
 
-- **Total hard edges:** 33
+- **Total hard edges:** 32
 - **Total soft edges:** ~190 (counted from the soft prereq table; some atoms appear in each other's soft lists, producing undirected pairs)
-- **Atoms with at least one hard prereq:** 30 (67 − 37 Layer-0 atoms)
-- **Atoms with no hard prereqs (Layer 0):** 37
+- **Atoms with at least one hard prereq:** 29 (67 − 38 Layer-0 atoms)
+- **Atoms with no hard prereqs (Layer 0):** 38
 - **Atoms that appear as hard prereq for others (load-bearing foundations):** 26
-- **Atoms with out-degree ≥ 3 (flagged load-bearing):** 2 — SC-B-013 (→ SC-B-007, SC-P-018, SC-P-023); SC-P-025 (→ SC-P-026, SC-P-029, SC-P-034)
+- **Atoms with out-degree ≥ 3 (flagged load-bearing):** 2 — SC-B-013 (→ SC-P-018, SC-P-023); SC-P-025 (→ SC-P-026, SC-P-029, SC-P-034)
 - **Atoms with in-degree ≥ 2 (flagged convergence points):** 3 — SC-A-008 (from SC-P-016 and SC-A-012); SC-P-018 (from SC-B-013 and SC-P-013); SC-P-020 (from SC-P-004 and SC-B-010)
 - **Max dependency depth:** 7 layers (SC-B-012 is 6 hard prereqs from any Layer 0 atom via SC-B-011 → SC-B-014 → SC-B-002 → SC-B-003 → SC-B-001 → SC-B-010)
 - **Cycles detected:** 0

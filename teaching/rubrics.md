@@ -156,7 +156,7 @@ Use these rubrics when:
 
 **Novice**: Adds frontend mock data patterns to an advisory rule file and stops there, leaving detection probabilistic — the model reads the rule most of the time and ignores it sometimes — so mock data ships when the rule is not loaded or the context window overflows.
 **Developing**: Extends the detection to the hook layer when instructed but does not independently recognize that detection in only one layer (rule OR hook) is the failure mode, and that defense in depth (rule + hook + command-step) is required.
-**Proficient**: Independently extends no-stubs detection to catch JS/TS frontend equivalents (MOCK*\*, FAKE*_, DUMMY\__, SAMPLE\__ constants; generate_() and mock\*() functions; Math.random() for display values) at the hook layer as a BLOCK (not warn), with regex specificity that avoids false positives on legitimate utilities like generateUUID().
+**Proficient**: Independently extends no-stubs detection to catch JS/TS frontend equivalents (MOCK*\*, FAKE*\_, DUMMY\_\_, SAMPLE\__ constants; generate_() and mock\*() functions; Math.random() for display values) at the hook layer as a BLOCK (not warn), with regex specificity that avoids false positives on legitimate utilities like generateUUID().
 **Advanced**: Composes detection with SC-A-003 (defense-in-depth codification) to land the fix across rule + hook + command-step simultaneously, and with SC-A-006 (negative tests for deny-by-default) to verify the deny path with real mock-data examples, producing a detection stack that no single-layer failure can bypass.
 
 ### SC-A-003 — Defense-in-depth codification across multiple artifact locations
@@ -203,7 +203,7 @@ Use these rubrics when:
 
 ### SC-A-009 — Progressive disclosure architecture for CC artifacts
 
-**Novice**: Flattens the hierarchy by putting everything at the index level "so it is always available," driven by anxiety about the model not finding a rule when it matters — producing the 48K always-loaded token overhead that degrades conversation quality.
+**Novice**: Flattens the hierarchy by putting everything at the index level, stating "the model might not find it otherwise" as justification — producing the 48K always-loaded token overhead that degrades conversation quality.
 **Developing**: Adds `paths:` frontmatter to scope domain-specific rules when instructed but does not independently classify each artifact into the 4-level hierarchy (master directive, index, topic, deep reference) or extract oversized agents into agent-stub-plus-skill pairs.
 **Proficient**: Independently structures CC artifacts in a 4-level hierarchy matching CO's progressive disclosure principle, classifies every artifact into exactly one level, scopes topic-level rules with `paths:` frontmatter, extracts oversized agents into stub-plus-skill pairs, and measures the before/after always-loaded token count to verify measurable reduction without losing institutional knowledge.
 **Advanced**: Composes progressive disclosure with SC-A-008 (rule classification) to move critical rules to hooks (outside the hierarchy entirely) and with SC-P-002 (ablation) to produce the KEEP/COMPRESS/REMOVE/DEMOTE data that drives the hierarchy placement, achieving a token-optimized artifact set that still enforces all critical constraints.

@@ -59,7 +59,7 @@ After drilling this, the practitioner can wire every repo in the chain so it tra
 
 ### SC-B-012 — Automate manifest-to-filesystem parity check and halt on staleness
 
-After drilling this, the practitioner can write an automated parity check script that uses set operations to compare `sync-manifest.yaml` against the filesystem, exit non-zero on orphans or stale entries, report parity gaps without halting on them, and wire the check into the `/sync` pre-flight so it is not optional.
+After drilling this, the practitioner can write an automated parity check script that compares `sync-manifest.yaml` against the filesystem, exit non-zero on orphans or stale entries, report parity gaps without halting on them, and wire the check into the `/sync` pre-flight so it is not optional.
 
 ### SC-B-013 — Map cross-workspace dependency surface before parallelizing
 
@@ -97,7 +97,7 @@ After drilling this, the practitioner can extend the no-stubs hook (`scripts/hoo
 
 ### SC-A-003 — Defense-in-depth codification across multiple artifact locations
 
-After drilling this, the practitioner can, for a single new rule, produce a codification plan that lands it in at least four distinct artifact types (rule, hook, agent, skill — or equivalent), explain what each artifact type contributes that the others cannot, and name the specific failure mode if any one landing is missing.
+After drilling this, the practitioner can, for a single new rule, produce a codification plan that lands it in at least four distinct artifact types (rules, skills, agents, hooks, and commands), explain what each artifact type contributes that the others cannot, and name the specific failure mode if any one landing is missing.
 
 ### SC-A-004 — Layer 3 hook security audit
 
@@ -121,7 +121,7 @@ After drilling this, the practitioner can classify each of ten rules from a real
 
 ### SC-A-009 — Progressive disclosure architecture for CC artifacts
 
-After drilling this, the practitioner can sort a flat CC artifact set of 15-20 rules and 5-10 agents into the four-level hierarchy (master directive / index / topic / deep reference), add `paths:` frontmatter to every topic-level rule, extract any agent over 400 lines into a stub plus a skill file, remove restated rules from CLAUDE.md, and achieve a measurable always-loaded token reduction without removing institutional knowledge.
+After drilling this, the practitioner can classify any CC artifact into exactly one of the four progressive-disclosure levels (master directive / index / topic / deep reference) based on load semantics, identify artifacts placed at a level that does not match their load frequency, and restructure the artifact set so that always-loaded token cost decreases while institutional knowledge coverage is preserved — applying the hierarchy principle to any artifact set, not just the specific refactoring steps of one drill exercise.
 
 ### SC-A-010 — Token budget — baked-in vs external boundary decision
 
@@ -187,7 +187,7 @@ After drilling this, the practitioner can read each factual claim in an architec
 
 ### SC-P-010 — Red team CI, auth, and release processes for timing-dependent failures
 
-After drilling this, the practitioner can identify timing assumptions across three categories — CI release race conditions, authentication timing side-channels (`.any()` / `.find()` short-circuit over constant-time comparison), and resource Drop paths lacking ambient runtime — construct a concrete attack scenario for each, propose a fix that eliminates the timing dependency rather than the symptom, and describe how to test that the fix actually resolves the race, side-channel, or runtime gap.
+After drilling this, the practitioner can identify timing assumptions across three categories — CI release race conditions (does the release process assume sequential execution?), authentication timing side-channels (does the time to validate a credential leak information about correctness?), and resource lifecycle cleanup (when an operation is interrupted, does cleanup happen correctly?) — construct a concrete attack scenario for each, propose a fix that eliminates the timing dependency rather than the symptom, and describe how to test that the fix actually resolves the race, side-channel, or lifecycle gap.
 
 ### SC-P-011 — Detect when an audit categorization method is structurally blind to the architecture it audits
 

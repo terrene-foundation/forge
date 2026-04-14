@@ -42,7 +42,7 @@ Atoms teaching defensive security craft: auditing, testing, integrity verificati
 
 ## Cluster 2 — PACT Governance (10 atoms)
 
-Atoms that directly serve PACT spec concepts — D/T/R accountability, operating envelopes, verification gradient, monotonic tightening.
+Atoms that serve governance craft — either directly citing PACT spec concepts or implementing governance patterns (rule reinterpretation, policy separation) that PACT governs.
 
 | Atom     | Name                                         | Modality      | Layer        |
 | -------- | -------------------------------------------- | ------------- | ------------ |
@@ -107,7 +107,7 @@ All 10 atoms from the COR application pass. These teach research-as-scholarship 
 
 **Prereqs within the cluster**: SC-P-025 is the foundation — SC-P-026, SC-P-029, and SC-P-034 all require it. SC-P-028 requires SC-P-027. The rest are Layer 0.
 
-**Overlap**: SC-P-025, SC-P-026, SC-P-032, SC-P-034 are tagged `[COR, COE]` and relevant for the COE application pass.
+**Overlap**: SC-P-025, SC-P-032, SC-P-034 are tagged `[COR, COE]`; SC-P-026 is tagged `[COR, COC, COE]`. All four are relevant for the COE application pass.
 
 ## Cluster 5 — Institutional Memory & Layer 5 (10 atoms)
 
@@ -157,7 +157,7 @@ Atoms about noticing patterns — what to look at, what to notice, and how to re
 
 **Overlap**: SC-P-001 also in PACT Governance. SC-P-017 also in Institutional Memory. SC-P-020 also in Attention-Timing (teaching sequence 5).
 
-## Cluster 7 — Cross-Application Atoms (22 atoms)
+## Cluster 7 — Cross-Application Atoms (24 atoms)
 
 Atoms tagged with two or more CO applications (`[COC, COR, COE]` or `[COR, COE]`). These are the atoms that transfer directly across application boundaries — the portable core of practitioner craft.
 
@@ -183,13 +183,14 @@ Atoms tagged with two or more CO applications (`[COC, COR, COE]` or `[COR, COE]`
 | SC-P-020 | Second occurrence structural signal   | COC, COR, COE |
 | SC-P-023 | Insert a gate, not a check            | COC, COR, COE |
 | SC-P-024 | Fallback permanence detection         | COC, COR, COE |
+| SC-P-025 | Tier-ranked literature search         | COR, COE      |
 | SC-P-026 | Citation integrity audit              | COR, COC, COE |
 | SC-P-032 | Margin note as deliberation           | COR, COE      |
 | SC-P-034 | Overclaim prevention                  | COR, COE      |
 
-**When to pull this cluster**: When designing a course that spans multiple CO applications. These 22 atoms are the transferable core — skills that work in codegen, research, and education contexts. A COE course, for example, can start with these 22 before adding COE-specific atoms from the future COE pass.
+**When to pull this cluster**: When designing a course that spans multiple CO applications. These 24 atoms are the transferable core — skills that work in codegen, research, and education contexts. A COE course, for example, can start with these 24 before adding COE-specific atoms from the future COE pass.
 
-**Note**: This cluster is a view, not a teaching unit. It is too large (22 atoms) for a single course segment. Use it as a selection filter — "which atoms from my course are also applicable elsewhere?" — not as a bundle to teach in sequence.
+**Note**: This cluster is a view, not a teaching unit. It is too large (24 atoms) for a single course segment. Use it as a selection filter — "which atoms from my course are also applicable elsewhere?" — not as a bundle to teach in sequence.
 
 ## Session Discipline (5 atoms)
 
@@ -221,13 +222,18 @@ Atoms about session hygiene — what to do at the start, during, and at the clos
 | 4. Research Craft (COR)   | 10    | COR-specific CO 5-layer | Research writing courses        |
 | 5. Institutional Memory   | 10    | CO §39, CO §7           | COC artifact-authoring courses  |
 | 6. Diagnostic Attention   | 8     | CO §3.2, CO §3.3        | Analytical/diagnostic courses   |
-| 7. Cross-Application      | 22    | Mixed                   | Cross-domain CO courses         |
+| 7. Cross-Application      | 24    | Mixed                   | Cross-domain CO courses         |
 | 8. Session Discipline     | 5     | CO §33, CO §29          | Introductory/onboarding courses |
 
-Total unique atoms across all clusters: 62 of 67. The 5 atoms not appearing in any cluster are highly specialized atoms that fit better into teaching sequences than into thematic bundles:
+Total unique atoms across all clusters: 57 of 67. The 10 atoms not appearing in any cluster are either standalone atoms or atoms better served by teaching sequences than thematic bundles:
 
 - SC-A-003 (defense-in-depth codification) — part of 5-Layer Architecture sequence
 - SC-A-008 (rule classification) — convergence point in two teaching sequences
 - SC-A-013 (agent specialization routing) — part of 5-Layer Architecture sequence
+- SC-B-001 (read-then-merge sync) — part of Sync/Drift sequence
+- SC-B-010 (drift detection audit) — part of Sync/Drift sequence
+- SC-B-012 (manifest parity automation) — part of Sync/Drift sequence
 - SC-P-006 (package boundary decision) — standalone decision atom
+- SC-P-009 (architecture doc as contract) — part of Attention-Timing sequence
 - SC-P-021 (reference sweep after rename) — standalone intervention atom
+- SC-P-022 (cross-model gap reading) — part of Rule-Optimization sequence
